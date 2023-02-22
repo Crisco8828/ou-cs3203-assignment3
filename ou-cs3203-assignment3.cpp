@@ -4,7 +4,10 @@ using namespace std;
 // Function Prototype
 int sumArray(int x, int y, int z);
 int productArray(int x, int y, int z);
+int* reverseArray(int x, int y, int z);
 
+
+// Step 1 - Sum of Array
 int sumArray(int x, int y, int z){
 
     int sum = 0;
@@ -35,6 +38,16 @@ int productArray(int x, int y, int z){
     }
 
     return product;
+}
+
+
+// Step 5 - Reverse Function
+int* reverseArray(int x, int y, int z){
+
+    int reverse[3] = {z, y, x};
+    
+    return reverse;
+
 }
 
 // Step 3 - Main Method with User Input
