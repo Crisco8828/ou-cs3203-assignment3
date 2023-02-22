@@ -45,6 +45,10 @@ int productArray(int x, int y, int z){
 int* reverseArray(int x, int y, int z){
 
     int reverse[3] = {z, y, x};
+
+    for(int i = 0; i < 3;i++){
+        cout << reverse[i];
+    }
     
     return reverse;
 
@@ -68,9 +72,12 @@ int main(){
     cout << sumArray(x,y,z);
 
     cout << "\nProduct of the numbers: ";
-    cout << productArray(x,y,z) << endl << endl;
+    cout << productArray(x,y,z);
+
+    cout << "\nReverse of the numbers inputted: ";
+    reverseArray(x,y,z);
 
     return 0;
 
-
+ 
 }
