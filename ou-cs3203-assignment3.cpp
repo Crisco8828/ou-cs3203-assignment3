@@ -26,7 +26,7 @@ int productArray(int x, int y, int z){
 
 
     int product = 1;
-    int array[3]={x,y,x};
+    int array[3]={x,y,z};
 
     for(int i = 0; i< 3;i++){
 
@@ -35,4 +35,29 @@ int productArray(int x, int y, int z){
     }
 
     return product;
+}
+
+// Step 3 - Main Method with User Input
+int main(){
+
+    int x, y, z;
+
+    cout << "Please enter the first number: ";
+    cin >> x;
+
+    cout<<"\nPlease enter the second number: ";
+    cin >> y;
+
+    cout << "\nPlease enter the third number: ";
+    cin >> z;
+
+    cout << "\n\nSum of the numbers: ";
+    cout << sumArray(x,y,z);
+
+    cout << "\nProduct of the numbers: ";
+    cout << productArray(x,y,z) << endl << endl;
+
+    return 0;
+
+
 }
